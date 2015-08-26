@@ -9,3 +9,5 @@ mv /opt/kibana-4.1.1-linux-x64 /opt/kibana
 ENV PATH /usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/opt/kibana/bin
 
 CMD ["kibana"]
+
+EXPOSE 5601
