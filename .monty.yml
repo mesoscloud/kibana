@@ -1,0 +1,15 @@
+- build: 4.1.1/centos/7
+  image:
+    - mesoscloud/kibana:4.1.1-centos-7
+    - mesoscloud/kibana:4.1.1-centos
+    - mesoscloud/kibana:4.1.1
+    - mesoscloud/kibana:latest
+
+- build: 4.1.1/ubuntu/14.04
+  image:
+    - mesoscloud/kibana:4.1.1-ubuntu-14.04
+    - mesoscloud/kibana:4.1.1-ubuntu
+
+
+- tests:
+    - cmd: kibana -V
