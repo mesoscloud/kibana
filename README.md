@@ -17,6 +17,13 @@ docker run -d \
 --name=kibana --net=host --restart=always mesoscloud/kibana:4.1.1-centos-7
 ```
 
+```
+docker run -d \
+-e ELASTICSEARCH_HOST=gateway \
+-p 5601:5601 \
+--name=kibana --restart=always mesoscloud/kibana:4.1.1-centos-7
+```
+
 ## Ubuntu
 
 [![](https://badge.imagelayers.io/mesoscloud/kibana:4.1.1-ubuntu-14.04.svg)](https://imagelayers.io/?images=mesoscloud/kibana:4.1.1-ubuntu-14.04)
@@ -26,4 +33,11 @@ e.g.
 ```
 docker run -d \
 --name=kibana --net=host --restart=always mesoscloud/kibana:4.1.1-ubuntu-14.04
+```
+
+```
+docker run -d \
+-e ELASTICSEARCH_HOST=gateway \
+-p 5601:5601 \
+--name=kibana --restart=always mesoscloud/kibana:4.1.1-ubuntu-14.04
 ```
